@@ -6,8 +6,10 @@ class Chats extends StatelessWidget {
     return Column(children: [
       Container(
         child: Card(
-          child: RaisedButton(
-            color: const Color(0xFF0D250D),
+          child: ElevatedButton(
+            style: ElevatedButton.styleFrom(
+                primary: Theme.of(context).primaryColor),
+            //MaterialStateProperty<Color>Theme.of(context).primaryColor,),
             onPressed: () {
               print('My kwikwi');
             },
